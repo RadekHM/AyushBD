@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" >
+    <title>Ayush</title>
+</head>
+<body>
+    <section>
+        <dir>
+        <h2 class="reveal">Happy Birthday Ayush 🎉 </h2>
+            <h2 class="reveal"> जन्मदिन की शुभकामनाएं 🎈 <br>
+                Alles Gute zum Geburtstag 🍾 <br>
+                كل عام وانت بخير 🎊 <br>
+                Честит Рожден ден 🥳 <br>
+                с Днем рожденья 🤘 </h2>
+            <img src="https://onsumo.com/wp-content/uploads/2019/11/Happy-birthday-meme-dog-onsumo-14.jpg" alt="Image 2">
+        </dir>
+    </section>
+    <section>
+        <dir>
+            <h2 class="reveal">Radek</h2>
+            <h2 class="reveal">Ayush bhai, an unexpected, but a wonderful friend, <br> I wish you a great birthday and a wonderful year!!! 🥳 <br> 
+                To a great year, that will fullfil all your dreams 🥳🥳 <br> 
+            Stay awesome and opinienated as you are ❤️ </h2>
+            <img src="img/radek.jpg" alt="Image 2">
+        </dir>
+    </section>
+    <section>
+        <dir>
+            <h2 class="reveal">Tamer</h2>
+            <h2 class="reveal">Happy birthday 21st Bhai, <br>
+                ich liebe dich, <br>
+                आपका जीवन गरम मसाला और प्यार से भरा हो</h2>
+            <img src="img/tamer.PNG" alt="Image 3">
+        </dir>
+    </section>
+    <section>
+        <dir>
+            <h2 class="reveal">Fadi</h2>
+            <h2 class="reveal">Happy birthday Ayush, wishing you a wonderful and joyful year !! <br> Have a blast 🎉🎉</h2>
+            <img src="img/Fadi.jpeg" alt="Image 1">
+        </dir>
+    </section>
+    <section>
+        <dir>
+            <h2 class="reveal">Tushar</h2>
+            <h2 class="reveal">Happy birthday Ayush wish you all the best for all your endeavours <br> Have a blast this year</h2>
+            <img src="img/tushar.jpeg" alt="Image 4">
+        </dir>
+    </section>
+    <section>
+        <dir>
+            <h2 class="reveal">Rafaela</h2>
+            <h2 class="reveal">Sweetest wishes for your special day! <br>
+                May the years ahead of you be filled with all that makes you feel warm and happy! <br>
+                Happy birthday!</h2>
+        </dir>
+    </section>
+    <section>
+        <dir>
+            <h2 class="reveal">Alina</h2>
+            <h2 class="reveal">Happy Birthday! 🎉🎊 <br>
+                I wish you allll the best🎂 <br>
+                Hope you will find job which will make you happy, <br>
+                enjoy this perfect life and fave fuuunnnn tonight 💃🏼🍾</h2>
+            <img src="img/alina.PNG" alt="Image 5">
+        </dir>
+    </section>
+    <section>
+        <dir>
+            <h2 class="reveal">Peter</h2>
+            <h2 class="reveal">Happy Birthday to one of the closest friends I've had. <br>
+                It's proof that even when you start off in bad terms with someone, <br>
+                you can still end it on a good note. <br>
+                May your Birthday be filled with joy, laughter, <br>
+                and mark the start of your new journey!</h2>
+            <img src="img/peter.jpg" alt="Image 6">
+        </dir>
+    </section>
+    <section>
+        <dir>
+            <h2 class="reveal">Shinigami</h2>
+            <h2 class="reveal">Happy Birthday Bitch Bloody 🥳🥳🥳 <br> 
+                It was a black day when you were born 🖤🖤 </h2>
+        </dir>
+    </section>
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.1/ScrollTrigger.min.js"></script>
+    <script type="text/javascript">
+        const reveal = gsap.utils.toArray('.reveal');
+        reveal.forEach((text, i) => {
+            ScrollTrigger.create({
+                trigger: text,
+                toggleClass: 'active',
+                start: 'top 90%',
+                end: 'top 10%'
+            })
+        })
+
+        
+        const images = gsap.utils.toArray('img');
+        images.forEach((img, i) => {
+            ScrollTrigger.create({
+                trigger: img,
+                toggleClass: 'active',
+                start: 'top 90%',
+                end: 'top 10%'
+            })
+        })
+
+    </script>
+    
+</body>
+</html>
